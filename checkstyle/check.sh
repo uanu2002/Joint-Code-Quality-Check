@@ -10,18 +10,7 @@ res_dir="${basedir}/workspace/res/"
 replink=$1
 
 
-cd "$basedir"
 
-if [ -d "$folder" ]; then
-    yes | rm -r "$folder"
-fi
-
-mkdir "$folder"
-
-cd "$folder"
-
-echo "Cloning Reposity"
-git clone "$replink"
 cd "$basedir"
 
 echo "Check with checkstyle"
